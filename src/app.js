@@ -6,6 +6,7 @@ const Weather = require('./utils/weather')
 
 
 const app = express()
+const port = process.env.PORT || 3000  //env variable for heroku, 3000 for localhost
 //console.log(path.join(__dirname,'./utils'))
 // console.log(path.join(__dirname,'../public'))
 const publicDirectoryPath = path.join(__dirname,'../public')
@@ -96,6 +97,6 @@ app.get('*', (req, res) =>{
     })
 })
 
-app.listen(3001, ()=>{
-    console.log('Server is up on port 3001')
+app.listen(port, ()=>{
+    console.log('Server is up on port ',port)
 })

@@ -7,7 +7,7 @@ let input = document.getElementById('userinput')
 let button = document.getElementById('enter')
 
 const fetchData = () => {
-    const url = 'http://localhost:3001/weather?location=' + input.value
+    const url = '/weather?location=' + input.value
     fetch(url)
     .then((response)=>response.json()
     .then((data)=>{
