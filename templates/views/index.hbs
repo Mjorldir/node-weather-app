@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    
+    <title>Home</title>
+</head>
+<body>
+    <div class="main-content" >
+        {{>header}}
+        <input id="userinput" type="text" placeholder="Enter a location">
+        <button id="enter">Enter</button><br/>
+        <img id="weather-image" />
+        <h2 id="linia1" ></h2>
+        <h2 id="linia2" ></h2>
+        <h2 id="linia3" ></h2>
+        <h2 id="linia4" ></h2>
+        <h2 id="linia5" ></h2>
+    </div>
+    
+    {{>footer}}
+</body>
+<script type="text/javascript" src="./javascript/weatherApp.js"></script>
+</html>
